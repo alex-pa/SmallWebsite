@@ -1,0 +1,600 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+nav {
+    float: right;
+}
+
+ion-icon {
+    font-size: 32px;
+    transition: 380ms;
+}
+
+ion-icon:hover {
+    transform: scale(1.17);
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.HeaderAdd {
+    background: #0099CC;
+    height: 0;
+}
+
+.HeaderMain {
+    background: #0099FF;
+    height: 100px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0px 14px rgba(1, 1, 1, 0.4);
+    transition: 0.5s;
+}
+.HeaderMain:hover {
+    box-shadow: 0 0px 20px rgba(1, 1, 1, 0.5);
+}
+
+.logo {
+    margin-top: 26px;
+    float: left;
+    transition: 0.4s;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.menu {
+    margin-top: 38px;
+    float: left;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu > li {
+    float: left;
+    display: flex;
+    margin-right: 60px;
+    margin-bottom: 14px;
+}
+
+.menu li i {
+    color: white;
+    font-size: 16px;
+    transition: 350ms;
+    margin-right: 3px;
+}
+
+.menu li a {
+    color: #ffffff;
+    opacity: 1;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 0;
+    font-size: 22px;
+    transition: 380ms;
+    padding-bottom: 14px;
+}
+
+.menu a:hover {
+    opacity: 0.76;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > .submenu:before { /*white rectangle*/
+    position: absolute;
+    z-index: 10;
+    left: 22%;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .1s;
+}
+
+.menu li:nth-child(2):hover .submenu:before {
+    left: 23%;
+}
+
+.menu li:nth-child(3):hover .submenu:before {
+    left: 28%;
+}
+
+.menu li:nth-child(4):hover .submenu:before {
+    left: 25%;
+}
+
+.menu li:nth-child(5):hover .submenu:before {
+    left: 24%;
+}
+
+.menu li:hover .submenu:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    color: white;
+}
+
+.submenu {
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 4;
+    left: 60%;
+    top: 70%;
+    width: 150px;
+    padding: 12px 0 12px 0;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.22);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0.1;
+    transform: translate(-50%, 20px);
+    transition: .25s;
+}
+
+.submenu:hover {            
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0); 
+}
+
+.submenu a:hover {
+    background: #00ccff;
+}
+
+.submenu li:hover a {
+    color: white;
+    opacity: 1;
+    transition: none;
+}
+
+.submenu li {
+    height: 40px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 10px 0 10px 20px;
+    margin: 0;
+    display: block;
+    width: 130px;
+    color: black;
+    font-size: 18px;
+    opacity: 1;
+    transition: 0s;
+}
+
+.menu a:hover + .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.section {
+    background: #f2f2f2;
+    padding-bottom: 60px;
+}
+
+.footer1 {
+    background: #22252c;
+    height: 540px;
+}
+
+.footer2 {
+    background: #1a1b20;
+    height: 100px;
+}
+
+#searchform {
+    display: none;
+    float: left;
+}
+
+#cancelbutton {
+    display: none;
+    float: right;
+}
+
+#searchfield {
+    width: 630px;
+    height: 42px;
+    padding-left: 16px;
+    padding-right: 12px;
+    color: #6a6f75;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: #e4f5ff;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 5px;
+    padding: 0 0 0 0;
+    float: right;
+}
+
+.search {
+    margin-top: 29px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#submitbutton {
+    background-color: #e4f5ff;
+    border-radius: 0 40px 40px 0;
+    height: 44px;
+    margin-top: -0.6px;
+    padding-right: 16px;
+    padding-left: 0;
+    margin-left: -1px;
+    transition: 0.5s;
+}
+
+#submitbutton ion-icon {
+    font-size: 28px;
+    color: gray;
+    margin-top: 3px;
+}
+
+.description {
+    text-align: center;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    padding: 50px 0; 
+}
+
+.description h1 {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    position: relative;
+    line-height: 1.2; /*задаём высоту строки*/
+}
+
+.description h1:after {
+    display: block;
+    position: absolute;
+    left: 0;    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;    /*задаём длинну линии до наведения курсора*/
+    height: 4px; /*задаём ширину линии*/
+    background-color: #0099FF; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.5s ease-out; /*задаём время анимации*/
+    box-shadow: 0 0px 20px rgba(1, 1, 1, 0.5);
+}
+
+.description h1:hover:after,
+.description h1:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+
+}
+
+.description p {
+    font-size: 21px;
+    font-weight: lighter;
+    color: #333333;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 28px;
+    transition: 380ms;
+}
+
+ {
+    border: 1px solid red;
+}
+
+.description p:hover {
+
+}
+
+.grid {
+    display: grid;
+    grid: repeat(2, 380px) 200px repeat(3, 380px) / repeat(3, 1fr);
+    padding-top: 0;
+    grid-column-gap: 45px;
+    grid-row-gap: 70px;
+    justify-content: space-around;
+}
+
+.grid div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid div:not(.Films, .Telegram) {
+    width: 350px;
+    height: 380px;
+}
+
+.down h4 {
+    margin: 0;
+    font-weight: lighter;
+    transition: 0.2s;
+}
+
+.box:hover .down h4 {
+    color: #0099FF;
+}
+
+.down p {
+    text-align: left;
+    font-size: 18px;
+    margin: 6px 30px 0 30px;
+    font-weight: lighter;
+    color: #333333;
+}
+
+.box {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box:hover.box img {
+    transform: scale(1.2);
+}
+
+.box img {
+    transition: 0.4s;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.down {
+    height: 160px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    padding-top: 8px;
+}
+
+.Films {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 380px;
+    background-color: #ff7b74;
+}
+
+.Youtube {
+    background-color: #ffc94f;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.Music {
+    background-color: #ace6fc;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.Audioscripts {
+    background-color: #dcea7b;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.Podcasts {
+    background-color: #ffc2e4;
+}
+
+.Articles {
+    background-color: #dcea7b;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+{
+    border: 1px solid red
+;
+}
+.Telegram {
+    grid-area: 3 / 1 / 4 / 4;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.32);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Telegram:hover {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sliderButton {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 40px 0 40px 0;
+    transition: 0.2s;
+}
+
+.sliderButton:hover {
+    background-color: gray;
+}
+
+.sliderButton i {
+    transition: 0.2s;
+    color: black;
+}
+
+.sliderButton:hover i {
+    color: white;
+}
+
+#sliderLeftButton {
+    border-radius: 0 20px 20px 0;
+}
+
+#sliderRightButton {
+    border-radius: 20px 0 0 20px;
+}
+
+#sliderMain2 {
+    display: none;
+}
+
+#sliderMain3 {
+    display: none;
+}
+
+#sliderMain4 {
+    display: none;
+}
+
+#sliderMain5 {
+    display: none;
+}
+
+#sliderMain6 {
+    display: none;
+}
+
+.sliderMain {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.sliderImgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.sliderImgBox img { /*img should be 100px or low*/
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid gray;
+}
+
+.sliderImgBox img:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sliderImgBox h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.sliderContentBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+.sliderContentBox h4 {
+    padding: 0;
+    margin: 0;
+    transition: 0.25s;
+}
+
+.sliderContentBox h4 i {
+    margin-right: 8px;
+}
+
+.Telegram:hover h4 {
+    color: #0099FF;
+}
+
+.sliderContentBox p {
+    text-align: center;
+    padding: 0;
+    margin: 12px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.Memes {
+    background-color: #dcea7b;
+}
+
+.Books {
+    background-color: #dcea7b;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.Vocabulary {
+    background-color: #ffc2e4;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.Grammar {
+    background-color: #ffc2e4;
+}
+
+.Speaking {
+    background-color: #ffc2e4;
+}
+
+.Tests {
+    background-color: #ace6fc;
+}
+
+.Games {
+    background-color: #ace6fc;
+    justify-content: space-between;
+    padding-top: 44px;
+}
+
+.Different {
+    background-color: #ace6fc;
+}
+

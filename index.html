@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <title>EngDive - learn English with joy</title>
+    <link rel="stylesheet" type="text/css" href="css/css1.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<script type="text/javascript" src="js/jquery1.js"></script>
+<script type="text/javascript" src="js/js1.js"></script>
+
+<header class="HeaderAdd">
+</header>
+
+<header class="HeaderMain">
+    <div class="container">
+        <a href="https://metanit.com/web/" target="_blank"><img src="img/EngDiveUbuntu.png" alt="EngDive" class="logo"
+                                                                id="logo" oncontextmenu="return false;"
+                                                                ondragstart="return false;"></a>
+        <nav>
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#"><i class="material-icons">arrow_forward_ios</i>Watch</a>
+                    <ul class="submenu">
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">arrow_forward_ios</i>Listen</a>
+                    <ul class="submenu">
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Audioscripts</a></li>
+                        <li><a href="#">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">arrow_forward_ios</i>Read</a>
+                    <ul class="submenu">
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Memes</a></li>
+                        <li><a href="#">Books</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">arrow_forward_ios</i>Learn</a>
+                    <ul class="submenu">
+                        <li><a href="#">Vocabulary</a></li>
+                        <li><a href="#">Grammar</a></li>
+                        <li><a href="#">Speaking</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">arrow_forward_ios</i>Other</a>
+                    <ul class="submenu">
+                        <li><a href="#">Tests</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Different</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search">
+                <form action='' id="searchform" onsubmit="return false">
+                    <input type="text" name="search" placeholder="Search" id="searchfield" autocomplete="off">
+                    <button type="submit" id="submitbutton">
+                        <ion-icon name="ios-search"></ion-icon>
+                    </button>
+                </form>
+                <button type="button" id="searchbutton">
+                    <ion-icon name="ios-search"></ion-icon>
+                </button>
+                <button type="button" id="cancelbutton">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="description">
+            <h1>
+                Welcome to «EngDive»
+            </h1>
+            <p>
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
+                используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                распределение букв и пробелов в абзацах.
+            </p>
+        </div>
+        <div class="grid">
+            <div class="Films box"><img src="img/films.png" alt="films" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Films</h4>
+                    <p>
+                        Смотрите англоязычные фильмы с субтитрами и моментально переводите значение непонятных вам слов
+                        и выражений.
+                    </p>
+                </div>
+            </div>
+            <div class="Youtube box"><img src="img/youtube.png" alt="youtube" oncontextmenu="return false;"
+                                          ondragstart="return false;">
+                <div class="down">
+                    <h4>Youtube</h4>
+                    <p>
+                        Подборка лучших YouTube каналов и видео на любой вкус которые помогут Вам в изучении английского
+                        языка.
+                    </p>
+                </div>
+            </div>
+            <div class="Music box"><img src="img/music.png" alt="music" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Music</h4>
+                    <p>
+                        Слушайте своих любимых исполнителей изучая английский язык.
+                    </p>
+                </div>
+            </div>
+            <div class="Audioscripts box"><img src="img/audioscripts.png" alt="audioscripts"
+                                               oncontextmenu="return false;" ondragstart="return false;">
+                <div class="down">
+                    <h4>Audioscripts</h4>
+                    <p>
+                        Проверяйте свои знания по аудированиям.
+                    </p>
+                </div>
+            </div>
+            <div class="Podcasts box"><img src="img/podcasts.png" alt="podcasts" oncontextmenu="return false;"
+                                           ondragstart="return false;">
+                <div class="down">
+                    <h4>Podcasts</h4>
+                    <p>
+                        Слушайте лучшие подкасты на английском языке.
+                    </p>
+                </div>
+            </div>
+            <div class="Articles box"><img src="img/articles.png" alt="articles" oncontextmenu="return false;"
+                                           ondragstart="return false;">
+                <div class="down">
+                    <h4>Articles</h4>
+                    <p>
+                        Читайте интересные статьи на английском языке и переводите новые для вас слова и выражения.
+                    </p>
+                </div>
+            </div>
+            <div class="Telegram">
+                <button class="sliderButton" id="sliderLeftButton" onclick="plusDivs(-1)">
+                    <i class="material-icons">arrow_back_ios</i>
+                </button>
+                <div class="sliderMain" id="sliderMain1">
+                    <div class="sliderImgBox">
+                        <a href="#"><img src="img/engdive.png" alt="engdive" oncontextmenu="return false;"
+                                         ondragstart="return false;"></a>
+                        <h6>@EngDive</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+                            Только самый сок :)<br>Погрузитесь в изучение английского языка!
+                        </p>
+                    </div>
+                </div>
+                <div class="sliderMain" id="sliderMain2">
+                    <div class="sliderImgBox">
+                        <a href="#"><img src="img/engpractice.png" alt="" oncontextmenu="return false;"
+                                         ondragstart="return false;"></a>
+                        <h6>@EngDivePractice</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+                            ☘️Слушайте носителей языка, интересные подкасты на английском не выходя из телеграмма!
+                        </p>
+                    </div>
+                </div>
+                <div class="sliderMain" id="sliderMain3">
+                    <div class="sliderImgBox">
+                        <a href="#"><img src="img/engmusic.png" alt="" oncontextmenu="return false;"
+                                         ondragstart="return false;"></a>
+                        <h6>@EngDiveMusic</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+                            ☘️Учите английский язык слушая музыку :)
+                        </p>
+                    </div>
+                </div>
+                <div class="sliderMain" id="sliderMain4">
+                    <div class="sliderImgBox">
+                        <img src="img/engjokes.png" alt="" oncontextmenu="return false;"
+                             ondragstart="return false;">
+                        <h6>@EngDiveJokes</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+                            ☘️Что может быть лучше чем учить инглиш по мемасам и шуточкам?
+                        </p>
+                    </div>
+                </div>
+                <div class="sliderMain" id="sliderMain5">
+                    <div class="sliderImgBox">
+                        <img src="" alt="" oncontextmenu="return false;"
+                             ondragstart="return false;">
+                        <h6>@EngDiveFilms</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="sliderMain" id="sliderMain6">
+                    <div class="sliderImgBox">
+                        <img src="" alt="" oncontextmenu="return false;"
+                             ondragstart="return false;">
+                        <h6>@EngDiveBooks</h6>
+                    </div>
+                    <div class="sliderContentBox">
+                        <h4><i class="fab fa-telegram-plane"></i>Telegram</h4>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <button class="sliderButton" id="sliderRightButton" onclick="plusDivs(1)">
+                    <i class="material-icons">arrow_forward_ios</i>
+                </button>
+            </div>
+            <div class="Memes box"><img src="img/memes.png" alt="memes" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Memes</h4>
+                    <p>
+                        Что может быть увлекателеьней чем изучение английского языка по мемасикам и шуточкам.
+                    </p>
+                </div>
+            </div>
+            <div class="Books box"><img src="img/books.png" alt="books" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Books</h4>
+                    <p>
+                        Подборка самых интересных книг на английском языке на различные темы: программирование,
+                        приключения, бизнес, мотивация.
+                    </p>
+                </div>
+            </div>
+            <div class="Vocabulary box"><img src="img/vocabulary.png" alt="vocabulary" oncontextmenu="return false;"
+                                             ondragstart="return false;">
+                <div class="down">
+                    <h4>Vocabulary</h4>
+                    <p>
+                        Пополните Ваш словарный запас чтобы разговаривать на английском языке красиво и непринужденно.
+                    </p>
+                </div>
+            </div>
+            <div class="Grammar box"><img src="img/grammar.png" alt="grammar" oncontextmenu="return false;"
+                                          ondragstart="return false;">
+                <div class="down">
+                    <h4>Grammar</h4>
+                    <p>
+                        Изучите основные грамматические правила языка, изложенные в простой и удобной для Вас форме.
+                    </p>
+                </div>
+            </div>
+            <div class="Speaking box"><img src="img/speaking.png" alt="speaking" oncontextmenu="return false;"
+                                           ondragstart="return false;">
+                <div class="down">
+                    <h4>Speaking</h4>
+                    <p>
+                        Лучшие текста и скороговорки для развития Вашей усной речи.
+                    </p>
+                </div>
+            </div>
+            <div class="Tests box"><img src="img/tests.png" alt="tests" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Tests</h4>
+                    <p>
+                        Пройдите интересные и нескучные тесты для того чтобы определить Ваш текущий уровень.
+                    </p>
+                </div>
+            </div>
+            <div class="Games box"><img src="img/games.png" alt="games" oncontextmenu="return false;"
+                                        ondragstart="return false;">
+                <div class="down">
+                    <h4>Games</h4>
+                    <p>
+                        Куча интересных мини игр основной целью которых является изучение английского языка.
+                    </p>
+                </div>
+            </div>
+            <div class="Different box"><img src="img/different.png" alt="different" oncontextmenu="return false;"
+                                            ondragstart="return false;">
+                <div class="down">
+                    <h4>Different</h4>
+                    <p>
+                        Альтернативные источники изучения английского языка и много чего интересного...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer1">
+    <div class="container">
+
+    </div>
+</footer>
+
+<footer class="footer2">
+    <div class="container">
+
+    </div>
+</footer>
+</body>
+</html>
