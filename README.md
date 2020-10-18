@@ -1,2 +1,2 @@
 # StaticWebsite
-Simple static website using jquery
+Simple website using html, css, and jquery library
